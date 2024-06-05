@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Adeline</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body style="background-color: #E4DDC9;">
+
+    
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="navbar-header">
+            <a href="home.html">
+                <p class="p1">Adeline</p>
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="illustrations.html" class="p4">Illustrations</a></li>
+            <li><a href="about_me.html" class="p4">About Me</a></li>
+            <li><a href="contact_me.html" class="p4">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid rectangle" style="margin-top: 100px;">
+        <img class="mySlides w3-animate-left" src="img/4.png" style="margin-top: 10px;">
+        <img class="mySlides w3-animate-left" src="img/6.png" style="margin-top: 10px;">
+        <img class="mySlides w3-animate-left" src="img/17.png" style="width: 1000px; height: 700px; object-fit: cover; margin-top: 10px;">
+    </div>
+
+
+    <div class="container-fluid" style="margin-bottom: 70px;">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="p2">Welcome!</p>
+                <p class="p3">I'm a digital artist that specializes in character design. Explore the world of my art and
+                    enjoy the blend of creativity and technical skill.</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <img src="img/2.jpg" class="a1">
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-bottom" style="height: 70px">
+        <ul class="nav navbar-nav">
+            <li class="p3" style="margin-left: 550px; margin-top: 20px;">Copyright © 2024 Yvlin Art ®</li>
+        </ul>
+    </nav>
+    
+
+</body>
+</html>
+
+<script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
